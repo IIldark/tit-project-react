@@ -11,10 +11,13 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-gray-800 text-white p-4 text-center">
-      <div className="container mx-auto">
-        <p>© 2024 TechCollege. Все права защищены.</p>
-        <p>Контактная информация: info@techcollege.ru | +7 (123) 456-78-90</p>
+    <footer className="bg-gradient-to-r mt-8 from-gray-200 to-gray-100 text-gray-900 p-8 text-center text-lg">
+      <div className="container mx-auto space-y-3">
+        <p>© 2024 Техникум Информационных Технологий. Все права защищены.</p>
+        <p>Контактная информация:</p>
+        <p>Телефон: 8(8793) 32-32-96, 97-43-74, +7(903)440-42-42</p>
+        <p>Адрес: г. Пятигорск, пр. Калинина, 15</p>
+        <p>Email: info@tech-it.ru</p>
         <p>Посетителей на сайте: {visits}</p>
       </div>
     </footer>

@@ -32,7 +32,7 @@ const Header = () => {
                 </svg>
               </div>
               <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-indigo-100 tracking-tighter">
-                TechCollege
+                Техникум Информационных Технологий
               </span>
             </Link>
           </motion.div>

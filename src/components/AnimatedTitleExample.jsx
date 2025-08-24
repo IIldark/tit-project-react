@@ -14,4 +14,5 @@ const AnimatedTitleExample = () => {
   );
 };
 
+
 export default AnimatedTitleExample;

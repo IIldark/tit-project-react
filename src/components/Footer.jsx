@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   const [visits, setVisits] = React.useState(0);
@@ -11,7 +12,12 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-gradient-to-r mt-8 from-gray-200 to-gray-100 text-gray-900 p-8 text-center text-lg">
+<motion.footer
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, type: 'spring' }}
+      className="bg-gradient-to-r from-gray-900 to-gray-800 bg-gray-900 border-t border-gray-700 text-gray-300 p-8 text-center text-lg"
+    >
       <div className="container mx-auto space-y-3">
         <p>© 2024 Техникум Информационных Технологий. Все права защищены.</p>
         <p>Контактная информация:</p>
@@ -20,7 +26,7 @@ const Footer = () => {
         <p>Email: info@tech-it.ru</p>
         <p>Посетителей на сайте: {visits}</p>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 
